@@ -19,7 +19,8 @@ module.exports = {
         apiURL: 'http://localhost:1337',
         contentTypes: [
           'user'
-        ]
+        ],
+        queryLimit: 1000,
       }
     },
     `gatsby-transformer-sharp`,
