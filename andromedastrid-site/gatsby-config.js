@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: process.env.API_URL='http://0f99cb09.ngrok.io/',
+        apiURL: process.env.API_URL='http://0f99cb09.ngrok.io',
         contentTypes: [
           'users',
         ],
