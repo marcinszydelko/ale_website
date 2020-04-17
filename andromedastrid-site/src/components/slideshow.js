@@ -13,7 +13,7 @@ const SlideShow = () => {
       } else {
         setIndex(prev => prev + 1);
       }
-    }, 3000); //duration
+    }, 4000); //duration
     return () => clearInterval(timer); //cleanup
   }, [index]); //compare
 
