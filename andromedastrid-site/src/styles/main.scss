@@ -125,11 +125,10 @@ main {
     border: 2px solid lightgrey;
     border-radius: 2px;
     padding: 7px;
-    height: 370px;
-    div.gatsby-image-wrapper {
-        position: relative;
-        object-fit: cover;
+    div {
+        height: 370px;
         width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -141,10 +140,6 @@ main {
         position: relative;
         text-align: center;
         color: grey;
-        width: 100%;
-        min-width: 250px;
-        min-height: 200px;
-        width: 100%;
     }
     .text-top {
         position: absolute;
@@ -152,7 +147,6 @@ main {
         left: 50%;
         margin: 0;
         transform: translate(-50%, 0%);
-        
     }
 }
 
@@ -169,19 +163,4 @@ main {
     border-top: 2px solid lightgrey;
     display:block;
     margin: 15px auto 0;
-}
-
-@media (max-width: 600px) {
-    #footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        // margin-top: 10px;
-    }
-    #footer-top {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-        
-    }
-
 }
