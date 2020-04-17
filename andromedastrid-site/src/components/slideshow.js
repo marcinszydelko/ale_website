@@ -8,16 +8,15 @@ const SlideShow = () => {
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      if (index === 2) { // total number of images minus 1
+      if (index === 2) { 
         setIndex(0);
       } else {
         setIndex(prev => prev + 1);
       }
-    }, 4000); //duration
-    return () => clearInterval(timer); //cleanup
-  }, [index]); //compare
+    }, 4000); 
+    return () => clearInterval(timer); 
+  }, [index]); 
 
-  // filter by sub-directory name slideshow
   const allImagesQuery = graphql`
     query {
         allFile(filter: {relativeDirectory: {eq: "slideshow"}, 
@@ -27,8 +26,8 @@ const SlideShow = () => {
             node {
             base
             childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
+                fixed {
+                  ...GatsbyImageSharpFixed
                 }
             }
             }
@@ -44,9 +43,9 @@ const SlideShow = () => {
   return(
     <div className="slider">
         <Img
-            fluid={images[index].node.childImageSharp.fluid}
+            fixed={images[index].node.childImageSharp.fixed}
             alt={images[index].node.base.split(".")[0]}
-            fadeIn="true"
+            // fadeIn="true"
         />
     </div>
   )

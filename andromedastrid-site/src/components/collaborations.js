@@ -33,7 +33,7 @@ const Collaborations = () => {
             key={i}
             fluid={images[i].node.childImageSharp.fluid}
             alt={images[i].node.base.split(".")[0]}
-            fadeIn="true"
+            // fadeIn="true"
         />)
       }
       return collaborations

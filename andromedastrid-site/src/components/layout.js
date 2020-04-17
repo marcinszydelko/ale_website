@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <div id="footer-top">
-          <div class="col">
+          <div className="col">
             <p>Stay connected</p>
             <div id="social-icons">
               <a href="https://www.facebook.com/AndromedastridIllustration" target="_blank">
@@ -85,7 +85,7 @@ const Layout = ({ children }) => {
               </a>
             </div>
           </div>
-          <div class="col">
+          <div className="col">
             <p>Contact me</p>
             <a href="mailto:andromedastrid@hotmail.com">andromedastrid@hotmail.com</a>
           </div>
