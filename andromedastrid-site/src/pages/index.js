@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import SlideShow from "../components/slideshow"
 import Collaborations from "../components/collaborations"
+import Boxes from "../components/boxes"
 
 
 const IndexPage = () => {

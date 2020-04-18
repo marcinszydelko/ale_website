@@ -40,10 +40,11 @@ const Collaborations = () => {
   }
   
   return(
-   <>   <h3>FEATURES AND COLLABORATIONS</h3>
-        <div id="collaborations">
-           {displayCollaborations()}
-        </div>
+   <>   
+      <h3>FEATURES AND COLLABORATIONS</h3>
+      <div id="collaborations">
+          {displayCollaborations()}
+      </div>
    </>
   )
 }
