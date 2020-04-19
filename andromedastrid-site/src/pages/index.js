@@ -8,6 +8,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import SlideShow from "../components/slideshow"
 import Collaborations from "../components/collaborations"
 import Boxes from "../components/boxes"
+import Image from "../components/image"
+
 
 
 const IndexPage = () => {
